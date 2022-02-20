@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps | Rahmat Soleh</title>
+    <link rel="icon" href="assets/img/icon.svg">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/font/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-book-open"></i> Bookshelf Apps</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="active" data-target="home">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="explore">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="reading">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <span>Read</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="complete">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span>Complete</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <article class="home show">
+                <section class="info">
+                    <div class="hero">
+                        <div class="hero-master">
+                            <p>Collection</p>
+                            <p>0</p>
+                            <p>Saved book</p>
+                        </div>
+                        <p><i class="fa-solid fa-swatchbook"></i></p>
+                    </div>
+                    <div class="info-detail">
+                        <div class="detail-read">
+                            <p>0</p>
+                            <p>Reading</p>
+                        </div>
+                        <div class="detail-complete">
+                            <p>0</p>
+                            <p>Complete</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="list-collection">
+                    <div class="list-title">
+                        <h2>Book List</h2>
+                        <a href="#" class="add-book"><i class="fa-solid fa-plus"></i> Add book</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>NO</th>
+                                <th class="title">TITLE</th>
+                                <th class="author">AUTHOR</th>
+                                <th class="year">YEAR</th>
+                                <th class="status">STATUS</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <div class="null-data"></div>
+                </section>
+            </article>
+            <article class="explore">
+                <form action=""> 
+                    <input type="text" placeholder="Search book title...">
+                    <button type="reset"><i class="fa-solid fa-rotate"></i></button>
+                </form>
+                <section class="explore-result"></section>
+                <div class="null-data"></div>
+                <p class="result"><span>6</span> Books Found</p>
+            </article>
+            <article class="reading">
+                <form action="">
+                    <input type="text" placeholder="Search book title...">
+                    <button type="reset"><i class="fa-solid fa-rotate"></i></button>
+                </form>
+                <section class="reading-result"></section>
+                <div class="null-data"></div>
+                <p class="result"><span>6</span> Books Found</p>
+            </article>
+            <article class="complete">
+                <form action="">
+                    <input type="text" placeholder="Search book title...">
+                    <button type="reset"><i class="fa-solid fa-rotate"></i></button>
+                </form>
+                <section class="complete-result"></section>
+                <div class="null-data"></div>
+                <p class="result"><span>6</span> Books Found</p>
+            </article>
+            <article class="form-book">
+                <div class="icon-book">
+                    <i class="fa-solid fa-book"></i>
+                    <p>Add New Book</p>
+                </div>
+                <form action="" method="post">
+                    <label for="id">ID Book</label>
+                    <input type="text" id="id" disabled>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" required>
+                    <label for="auth">Author</label>
+                    <input type="text" id="auth" required>
+                    <label for="year">Year</label>
+                    <input type="number" id="year" required>
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="false">Is Reading</option>
+                        <option value="true">Complete</option>
+                    </select>
+                    <div>
+                        <button type="submit" id="submit"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+                    <button type="reset" id="reset"><i class="fa-solid fa-arrow-rotate-right"></i> Reset</button>
+                    </div>
+                </form>
+            </article>
+            <article class="book-detail">
+                <div class="icon-book">
+                    <i class="fa-solid fa-book"></i>
+                    <p>The Tittle Of Book</p>
+                </div>
+                <div class="book-detail_info">
+                    <table>
+                        <tr>
+                            <td>ID Book</td>
+                            <td>: <span>-</span></td>
+                        </tr>
+                        <tr>
+                            <td>Title</td>
+                            <td>: <span>-</span></td>
+                        </tr>
+                        <tr>
+                            <td>Author</td>
+                            <td>: <span>-</span></td>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td>: <span>-</span></td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>: <span>-</span></td>
+                        </tr>
+                    </table>
+                    <button></button>
+                </div>
+                <div class="book-detail_action">
+                    <a href="#" class="update-book"><i class="fa-solid fa-pen-to-square"></i> Update</a>
+                    <a href="#" class="delete-book"><i class="fa-solid fa-trash"></i> Delete</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Dicoding | MSIB 2022</p>
+        <p>Rahmat Soleh &copy; 2022</p>
+    </footer>
+<script src="assets/js/sweet-alert.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/interface.js"></script>
+<script src="assets/js/dom.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.reading {
+  margin-top: 0.5em;
+  display: none;
+}
+
+.reading .card {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 137, 164, 1) 0%,
+    rgba(0, 180, 216, 1) 50%,
+    rgba(18, 216, 255, 1) 100%
+  );
+}
+
+.reading .card:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 88, 106, 1) 0%,
+    rgba(0, 124, 149, 1) 50%,
+    rgba(0, 180, 215, 1) 100%
+  );
+}
+
+@media screen and (min-width: 1024px) {
+  .reading {
+    margin-top: 1em;
+  }
+}

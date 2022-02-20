@@ -1,0 +1,106 @@
+.explore {
+  margin-top: 0.5em;
+  display: none;
+}
+
+article form {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article form input {
+  width: 75%;
+  height: 44px;
+  box-sizing: border-box;
+  font-size: 1em;
+  border: 1px solid var(--scondary);
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+  margin-right: 0.5em;
+}
+
+article form button {
+  width: 44px;
+  height: 44px;
+  font-weight: bold;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid var(--scondary);
+  color: var(--lighten);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 4, 223, 1) 0%,
+    rgba(87, 90, 255, 1) 50%,
+    rgba(0, 180, 216, 1) 100%
+  );
+}
+
+article form button:hover {
+  box-shadow: none;
+  cursor: pointer;
+  background: linear-gradient(
+    0deg,
+    rgba(3, 4, 94, 1) 0%,
+    rgba(0, 4, 223, 1) 50%,
+    rgba(0, 180, 216, 1) 100%
+  );
+}
+
+.result {
+  font-style: italic;
+  color: var(--scondary);
+  font-weight: 600;
+  margin: 1em 1em 0;
+}
+
+.explore-result {
+  margin-top: 1em;
+}
+
+.card {
+  display: block;
+  width: 95%;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid var(--scondary);
+  margin: 1em auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  box-sizing: border-box;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 4, 223, 1) 0%,
+    rgba(87, 90, 255, 1) 50%,
+    rgba(0, 180, 216, 1) 100%
+  );
+  color: var(--lighten);
+}
+
+.card h3 {
+  font-size: 1.5em;
+}
+
+.card p {
+  color: var(--lighten);
+}
+
+.card:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(3, 4, 94, 1) 0%,
+    rgba(0, 4, 223, 1) 50%,
+    rgba(0, 180, 216, 1) 100%
+  );
+}
+
+@media screen and (min-width: 1024px) {
+  .explore {
+    margin-top: 1em;
+  }
+}

@@ -1,0 +1,28 @@
+.complete {
+  margin-top: 0.5em;
+  display: none;
+}
+
+.complete .card {
+  background: linear-gradient(
+    0deg,
+    rgba(3, 4, 94, 1) 0%,
+    rgba(0, 2, 181, 1) 50%,
+    rgba(0, 3, 237, 1) 100%
+  );
+}
+
+.complete .card:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 1, 142, 1) 0%,
+    rgba(0, 2, 196, 1) 50%,
+    rgba(0, 2, 244, 1) 100%
+  );
+}
+
+@media screen and (min-width: 1024px) {
+  .complete {
+    margin-top: 1em;
+  }
+}
